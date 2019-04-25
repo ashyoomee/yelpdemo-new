@@ -65,9 +65,6 @@ GEM
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
-    carrierwave_direct (2.1.0)
-      carrierwave (>= 1.0.0)
-      fog-aws
     childprocess (1.0.1)
       rake (< 13.0)
     chromedriver-helper (2.1.1)
@@ -445,7 +442,6 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   carrierwave (~> 1.0)
-  carrierwave_direct
   chromedriver-helper
   coffee-rails (~> 4.2)
   fog

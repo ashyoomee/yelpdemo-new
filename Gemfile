@@ -37,7 +37,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
 
@@ -67,6 +66,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'carrierwave', '~> 1.0'
-gem 'carrierwave_direct'
-gem "fog-aws"
+gem "fog"
 gem 'sidekiq'
