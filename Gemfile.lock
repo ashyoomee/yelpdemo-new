@@ -48,7 +48,9 @@ GEM
       io-like (~> 0.3.0)
     arel (9.0.0)
     bindex (0.7.0)
-    bootsnap (1.4.3)
+    bootsnap (1.4.4)
+      msgpack (~> 1.0)
+    bootsnap (1.4.4-java)
       msgpack (~> 1.0)
     builder (3.2.3)
     byebug (11.0.1)
@@ -83,15 +85,17 @@ GEM
     excon (0.64.0)
     execjs (2.7.0)
     ffi (1.10.0)
-    fog-aws (2.0.1)
-      fog-core (~> 1.38)
-      fog-json (~> 1.0)
+    ffi (1.10.0-java)
+    fog-aws (3.5.0)
+      fog-core (~> 2.1)
+      fog-json (~> 1.1)
       fog-xml (~> 0.1)
       ipaddress (~> 0.8)
-    fog-core (1.45.0)
+    fog-core (2.1.2)
       builder
       excon (~> 0.58)
       formatador (~> 0.2)
+      mime-types
     fog-json (1.2.0)
       fog-core
       multi_json (~> 1.10)
@@ -128,13 +132,17 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     msgpack (1.2.10)
+    msgpack (1.2.10-java)
     multi_json (1.13.1)
     nio4r (2.3.1)
+    nio4r (2.3.1-java)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.3-java)
     pg (1.1.4)
     public_suffix (3.0.3)
     puma (3.12.1)
+    puma (3.12.1-java)
     rack (2.0.7)
     rack-protection (2.0.5)
       rack
@@ -188,7 +196,7 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    selenium-webdriver (3.141.5926)
+    selenium-webdriver (3.142.0)
       childprocess (>= 0.5, < 2.0)
       rubyzip (~> 1.2, >= 1.2.2)
     sidekiq (5.2.7)
@@ -210,6 +218,7 @@ GEM
       sprockets (>= 3.0.0)
     thor (0.20.3)
     thread_safe (0.3.6)
+    thread_safe (0.3.6-java)
     tilt (2.0.9)
     turbolinks (5.2.0)
       turbolinks-source (~> 5.2)
@@ -225,12 +234,16 @@ GEM
       railties (>= 5.0)
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
+    websocket-driver (0.7.0-java)
+      websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
     xpath (3.2.0)
       nokogiri (~> 1.8)
 
 PLATFORMS
+  java
   ruby
+  unknown
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)
@@ -252,7 +265,6 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
-  tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
 
@@ -260,4 +272,4 @@ RUBY VERSION
    ruby 2.6.0p0
 
 BUNDLED WITH
-   1.17.2
+   2.0.1
