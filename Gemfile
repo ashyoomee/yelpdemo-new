@@ -69,3 +69,4 @@ gem "fog-aws"
 gem 'sidekiq'
 gem "aws-sdk-s3", require: false
 gem "mini_magick"
+gem 'devise'
