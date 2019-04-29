@@ -66,3 +66,4 @@ gem 'carrierwave', '~> 1.0'
 gem "fog-aws"
 gem 'sidekiq'
 gem "aws-sdk-s3", require: false
+gem "figaro"
