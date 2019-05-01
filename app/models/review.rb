@@ -1,2 +1,3 @@
-class Review < ApplicationRecord
-end
+class Review < ActiveRecord::Base
+    belongs_to :user
+  end
