@@ -70,3 +70,4 @@ gem 'sidekiq'
 gem "aws-sdk-s3", require: false
 gem "mini_magick"
 gem 'devise'
+gem 'friendly_id', '~> 5.2.4' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
