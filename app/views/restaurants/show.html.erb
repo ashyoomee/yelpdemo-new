@@ -2,10 +2,9 @@
   <div class="col-md-3">
       <%= image_tag @restaurant.image_url %>
 
-    <p>
-      <strong>Name:</strong>
+    <h2>
       <%= @restaurant.name %>
-    </p>
+    </h2>
 
     <p>
       <strong>Address:</strong>
@@ -19,7 +18,7 @@
 
     <p>
       <strong>Website:</strong>
-      <%= @restaurant.website %>
+      <%= link_to @restaurant.website, @restaurant.website %>
     </p>
 
     <%= link_to "Write Review", new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
