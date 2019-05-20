@@ -27,9 +27,9 @@
     <% if  @reviews.blank?  %>
       <h3> No reviews yet. Be the first to write one!</div>
       <% else %>
-      <% @reviews.each do |review| %>
-        <div class="star-rating"></div>
-        <p><%= review.comment %></p>
+    <% @reviews.each do |review| %>
+      <div class="star-rating" data-score= <%= review.rating %> ></div>
+      <p><%= review.comment %></p>
       <% end %>
     <% end %>
 
@@ -43,5 +43,9 @@
 <script>
   $('.star-rating').raty({
     path: 'https://s3.eu-west-2.amazonaws.com/myyelpdemo/stars'
+    readOnly: true,
+    score: function() {
+      return $(this).attr('data-score');
+    }
   });
 </script>
