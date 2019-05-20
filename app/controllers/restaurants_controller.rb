@@ -14,7 +14,7 @@ class RestaurantsController < ApplicationController
     if @reviews.blank?
       @avg_rating = 0
     else
-    @avg_rating = @revies.avaerage(:rating).round(2)
+    @avg_rating = @reviews.average(:rating).round(2)
     end
   end
 
