@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :validatable
   has_many :reviews, dependent: :destroy     
 
-  validates :first_name, :last_name, presence: true
+  validates :first_name, presence: true
  
 end
 
